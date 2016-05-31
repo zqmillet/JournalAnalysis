@@ -1,0 +1,330 @@
+%!TEX program = xelatex
+%!TEX builder = latexmk
+
+\documentclass[12pt,
+               a4paper,
+               journal,
+               onecolumn]{IEEEtran}
+
+\input{./Configuration}
+\begin{document}
+\section{Analysis of Proceedings of the IEEE}
+This statistics report includes 206 papers of Proceedings of the IEEE. The impact factor of Proceedings of the IEEE is 4.934. The review time distribution of Proceedings of the IEEE is shown in \cref{fig:Review Time Distribution of Proceedings of the IEEE}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,               
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 600
+                ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/ProceedingsOfTheIEEEReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Review Time Distribution of Proceedings of the IEEE}
+  \label{fig:Review Time Distribution of Proceedings of the IEEE}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 564 days,
+  \item The average review Time is 162.7923 days,
+  \item The minimum review Time is 15 days.
+\end{itemize}
+
+The page number distribution of Proceedings of the IEEE is shown in \cref{fig:Page Number Distribution of Proceedings of the IEEE}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Page Number,
+                 label style = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/ProceedingsOfTheIEEEPageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of Proceedings of the IEEE}
+  \label{fig:Page Number Distribution of Proceedings of the IEEE}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 63,
+  \item The average page number is 17.4809,
+  \item The minimum page number is 7.
+\end{itemize}
+
+\section{Analysis of IEEE Transaction on Industrial Electronics}
+This statistics report includes 310 papers of IEEE Transaction on Industrial Electronics. The impact factor of IEEE Transaction on Industrial Electronics is 6.498. The review time distribution of IEEE Transaction on Industrial Electronics is shown in \cref{fig:Review Time Distribution of IEEE Transaction on Industrial Electronics}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 600
+                ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnIndustrialElectronicsReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Review Time Distribution of IEEE Transaction on Industrial Electronics}
+  \label{fig:Review Time Distribution of IEEE Transaction on Industrial Electronics}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 597 days,
+  \item The average review Time is 204.7581 days,
+  \item The minimum review Time is 11 days.
+\end{itemize}
+
+The page number distribution of IEEE Transaction on Industrial Electronics is shown in \cref{fig:Page Number Distribution of IEEE Transaction on Industrial Electronics}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Page Number,
+                 label style = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnIndustrialElectronicsPageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of IEEE Transaction on Industrial Electronics}
+  \label{fig:Page Number Distribution of IEEE Transaction on Industrial Electronics}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 16,
+  \item The average page number is 10.5774,
+  \item The minimum page number is 3.
+\end{itemize}
+
+\section{Analysis of IEEE Transaction on Industrial Informatics}
+This statistics report includes 413 papers of IEEE Transaction on Industrial Informatics. The impact factor of IEEE Transaction on Industrial Informatics is 8.785. The review time distribution of IEEE Transaction on Industrial Informatics is shown in \cref{fig:Review Time Distribution of IEEE Transaction on Industrial Informatics}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 900
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnIndustrialInformaticsReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Review Time Distribution of IEEE Transaction on Industrial Informatics}
+  \label{fig:Review Time Distribution of IEEE Transaction on Industrial Informatics}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 877 days,
+  \item The average review Time is 245.3293 days,
+  \item The minimum review Time is 1 days.
+\end{itemize}
+
+The page number distribution of IEEE Transaction on Industrial Electronics is shown in \cref{fig:Page Number Distribution of IEEE Transaction on Industrial Informatics}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel           = Paper Number,
+                 xlabel           = Page Number,
+                 label style      = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnIndustrialInformaticsPageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of IEEE Transaction on Industrial Informatics}
+  \label{fig:Page Number Distribution of IEEE Transaction on Industrial Informatics}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 18,
+  \item The average page number is 11.4092,
+  \item The minimum page number is 5.
+\end{itemize}
+
+\section{Analysis of IEEE Transaction on Information Forensics and Security}
+This statistics report includes 123 papers of IEEE Transaction on Information Forensics and Security. The impact factor of IEEE Transaction on Information Forensics and Security is 2.408. The review time distribution of IEEE Transaction on Information Forensics and Security is shown in \cref{fig:Review Time Distribution of IEEE Transaction on Information Forensics and Security}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 500
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnInformationForensicsAndSecurityReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Review Time Distribution of IEEE Transaction on Information Forensics and Security}
+  \label{fig:Review Time Distribution of IEEE Transaction on Information Forensics and Security}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 428 days,
+  \item The average review Time is 196.0488 days,
+  \item The minimum review Time is 16 days.
+\end{itemize}
+
+The page number distribution of IEEE Transaction on Information Forensics and Security is shown in \cref{fig:Page Number Distribution of IEEE Transaction on Information Forensics and Security}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel           = Paper Number,
+                 xlabel           = Page Number,
+                 label style      = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/IEEETransactionOnInformationForensicsAndSecurityPageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of IEEE Transaction on Information Forensics and Security}
+  \label{fig:Page Number Distribution of IEEE Transaction on Information Forensics and Security}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 27,
+  \item The average page number is 12.9512,
+  \item The minimum page number is 1.
+\end{itemize}
+
+\section{Analysis of Safety Science}
+This statistics report includes 308 papers of Safety Science. The impact factor of Safety Science is 1.831. The review time distribution of Safety Science is shown in \cref{fig:Review Time Distribution of Safety Science}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 1000
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/SafetyScienceReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Review Time Distribution of Safety Science}
+  \label{fig:Review Time Distribution of Safety Science}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 972 days,
+  \item The average review Time is 248.1364 days,
+  \item The minimum review Time is 19 days.
+\end{itemize}
+
+The page number distribution of Safety Science is shown in \cref{fig:Page Number Distribution of Safety Science}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel           = Paper Number,
+                 xlabel           = Page Number,
+                 label style      = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/SafetySciencePageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of Safety Science}
+  \label{fig:Page Number Distribution of Safety Science}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 25,
+  \item The average page number is 10.3766,
+  \item The minimum page number is 4.
+\end{itemize}
+
+
+\section{Analysis of Annual Reviews in Control}
+This statistics report includes 102 papers of Annual Reviews in Control. The impact factor of Annual Reviews in Control is 2.518. The review time distribution of Annual Reviews in Control is shown in \cref{fig:Review Time Distribution of Annual Reviews in Control}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.013cm,
+                 bar width   = 0.13cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                 xmin        = 0,
+                 xmax        = 800
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/AnnualReviewsInControlReviewTimeDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Review Time Distribution of Annual Reviews in Control}
+  \label{fig:Review Time Distribution of Annual Reviews in Control}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum review Time is 727 days,
+  \item The average review Time is 120.4706 days,
+  \item The minimum review Time is 2 days.
+\end{itemize}
+
+The page number distribution of Annual Reviews in Control is shown in \cref{fig:Page Number Distribution of Annual Reviews in Control}.
+\begin{figure}[htb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[ybar,
+                 x           = 0.2cm,
+                 bar width   = 0.2cm - 0.5pt,
+                 height      = 5.8cm,
+                 ylabel           = Paper Number,
+                 xlabel           = Page Number,
+                 label style      = {font = \footnotesize},
+                 ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/OutputData/AnnualReviewsInControlPageNumberDistribution.dat};
+    \end{axis}
+  \end{tikzpicture} 
+  \caption{Page Number Distribution of Annual Reviews in Control}
+  \label{fig:Page Number Distribution of Annual Reviews in Control}
+\end{figure}
+
+\begin{itemize}
+  \item The maximum page number is 29,
+  \item The average page number is 13.2255,
+  \item The minimum page number is 7.
+\end{itemize}
+\end{document}
+
