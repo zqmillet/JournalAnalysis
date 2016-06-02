@@ -3,12 +3,12 @@
 ## Introduction
 This is a analysis report of some journals where I plan to submit my manuscript to. The list of these journals is shown as follows.
 
-* Proceedings of the IEEE,
-* IEEE Transactions on Industrial Electronics,
-* IEEE Transactions on Industrial Informatics,
-* IEEE Transactions on Information Forensics and Security,
-* Safety Science,
-* Annual Reviews in Control.
+* [Proceedings of the IEEE][POTI],
+* [IEEE Transactions on Industrial Electronics][TIE],
+* [IEEE Transactions on Industrial Informatics][TII],
+* [IEEE Transactions on Information Forensics and Security][TIFS],
+* [Safety Science][SS],
+* [Annual Reviews in Control][ARIC].
 
 ## What is in the Report
 In this report, there are:
@@ -23,11 +23,11 @@ In this report, there are:
 This `Reamdme.md` file contains the report. If you want get the `.pdf` file of the report, please clone this repository and compile the `main.tex` file with `xelatex`.
 
 ## Notice
-Some information of this report is from full papers, but this repository does not contain these full papers. If you want to obtain these full papers, you can use the **BibTeXTools** or **JabRef** to download them with `.bib` files which are in this repository.
+Some information of this report is from full papers, but this repository does not contain these full papers. If you want to obtain these full papers, you can use the [BibTeXTools][BibTeXTools] or [JabRef][JabRef] to download them with `.bib` files which are in this repository.
 
 ## Report
 ### Proceedings of the IEEE
-> The most highly-cited general interest journal in electrical engineering and computer science, the [Proceedings of the IEEE][POTI] is the best way to stay informed on an exemplary range of topics. This journal also holds the distinction of having the longest useful archival life of any EE or computer related journal in the world! Since 1913, the Proceedings of the IEEE has been the leading journal to provide in-depth tutorial and review coverage of the technical developments that shape our world.
+> The most highly-cited general interest journal in electrical engineering and computer science, the [Proceedings of the IEEE][POTI] is the best way to stay informed on an exemplary range of topics. This journal also holds the distinction of having the longest useful archival life of any EE or computer related journal in the world! Since 1913, the [Proceedings of the IEEE][POTI] has been the leading journal to provide in-depth tutorial and review coverage of the technical developments that shape our world.
 
 |Year      | Impact Factor | Total Articles | Total Cites|
 |:---:     | :---:         | :---:          | :---:      |
@@ -38,6 +38,8 @@ Some information of this report is from full papers, but this repository does no
 |2010      | 5.096         | 139            | 16971      |
 |2009      | 4.878         | 129            | 17919      |
 |2008      | 4.613         | 122            | 17993      |
+
+There are 182 papers of [Proceedings of the IEEE][POTI] for statistics.
 
 The review time distribution of [Proceedings of the IEEE][POTI] is shown as following figure.
 
@@ -64,6 +66,8 @@ Year      | Impact Factor | Total Articles | Total Cites|
 2009      | 4.678         | 505            | 10306      |
 2008      | 5.468         | 454            | 9014       |
 
+There are 310 papers of [IEEE Transactions on Industrial Electronics][TIE] for statistics.
+
 The review time distribution of [IEEE Transactions on Industrial Electronics][TIE] is shown as following figure.
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialElectronics.png)
@@ -88,6 +92,8 @@ Year      | Impact Factor | Total Articles | Total Cites|
 2010      | 1.627         | 63             | 328        |
 2009      | 1.614         | 39             | 287        |
 2008      | 2.356         | 28             | 227        |
+
+There are 413 papers of [IEEE Transactions on Industrial Informatics][TII] for statistics.
 
 The review time distribution of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
@@ -114,6 +120,8 @@ Year      | Impact Factor | Total Articles | Total Cites|
 2009      | 2.338         | 81             | 540        |
 2008      | 2.230         | 68             | 265        |
 
+There are 123 papers of [IEEE Transactions on Information Forensics and Security][TIFS] for statistics.
+
 The review time distribution of [IEEE Transactions on Information Forensics and Security][TIFS] is shown as following figure.
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
@@ -138,6 +146,8 @@ Year      | Impact Factor | Total Articles | Total Cites|
 2010      | 1.637         | 175            | 1788       |
 2009      | 1.220         | 153            | 1274       |
 2008      | 0.836         | 114            | 921        |
+
+There are 308 papers of [Safety Science][SS] for statistics.
 
 The review time distribution of [Safety Science][SS] is shown as following figure.
 
@@ -164,6 +174,8 @@ Year      | Impact Factor | Total Articles | Total Cites|
 2009      | 1.886         | 23             | 441        |
 2008      | 1.109         | 20             | 365        |
 
+There are 102 papers of [Annual Reviews in Control][ARIC] for statistics.
+
 The review time distribution of [Annual Reviews in Control][ARIC] is shown as following figure.
 
 ![image](./Figures/ReviewTimeDistribution/AnnualReviewsInControl.png)
@@ -182,3 +194,5 @@ The relationship between review time and page number of [Annual Reviews in Contr
 [TIFS]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206 "IEEE Transactions on Information Forensics and Security"
 [SS]:http://www.journals.elsevier.com/safety-science "Safety Science"
 [ARIC]:http://www.journals.elsevier.com/annual-reviews-in-control "http://www.journals.elsevier.com/annual-reviews-in-control/"
+[BibTeXTools]:https://github.com/zqmillet/BibTeXTools "BibTeXTools"
+[JabRef]:http://www.jabref.org "JabRef"
