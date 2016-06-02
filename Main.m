@@ -78,7 +78,7 @@ if ~exist(GhostScript, 'file')
   error('There is no GhostScript!');
 end
 for i = 1:numel(Directories)
-  disp(['Converting PDF file of ', Directories{i},' to PNG file.']);
+  disp(['Converting PDF files of ', Directories{i},' to PNG files.']);
   PDFFileName = ['Figures/ReviewTimeDistribution/', Directories{i}, '.pdf'];
   PNGFileName = ['Figures/ReviewTimeDistribution/', Directories{i}, '.png'];
   Parameters = ['-sDEVICE=pngalpha -dBATCH -sOutputFile=', PNGFileName, ' -r', num2str(Resolution), ' -dNOPAUSE'];
