@@ -27,8 +27,20 @@ Some information of this report is from full papers, but this repository does no
 
 ## Report
 ### Proceedings of the IEEE
+![image](./Figures/ReviewTimeDistribution/ProceedingsOfTheIEEE.png)
+![image](./Figures/PageNumberDistribution/ProceedingsOfTheIEEE.png)
 ### IEEE Transaction on Industrial Electronics
+![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialElectronics.png)
+![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialElectronics.png)
 ### IEEE Transaction on Industrial Informatics
+![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialInformatics.png)
+![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialInformatics.png)
 ### IEEE Transaction on Information Forensics and Security
+![image](./Figures/ReviewTimeDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
+![image](./Figures/PageNumberDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
 ### Safety Science
+![image](./Figures/ReviewTimeDistribution/SafetyScience.png)
+![image](./Figures/PageNumberDistribution/SafetyScience.png)
 ### Annual Reviews in Control
+![image](./Figures/ReviewTimeDistribution/AnnualReviewsInControl.png)
+![image](./Figures/PageNumberDistribution/AnnualReviewsInControl.png)

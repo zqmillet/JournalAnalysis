@@ -1,0 +1,26 @@
+%!TEX program = xelatex
+%!TEX builder = latexmk
+
+\documentclass{article}
+\usepackage{fontspec}
+  \setmainfont{Segoe UI}
+\usepackage{tikz}
+\usepackage{pgfplots}
+  \pgfplotsset{compat = 1.13}
+\usepackage[active, tightpage]{preview}
+  \PreviewEnvironment{tikzpicture}
+  \setlength\PreviewBorder{0pt}
+
+\begin{document}
+  \begin{tikzpicture}
+    \begin{axis}[bar width   = 0.55cm,
+                 width       = 12cm,
+                 height      = 5.8cm,
+                 ylabel      = Paper Number,
+                 xlabel      = Review Time (Day),
+                 label style = {font = \footnotesize},
+                ]
+      \addplot[ybar, fill = black, draw = none] file {./Data/ReviewTimeDistribution/{{FileName}}.dat};
+    \end{axis}
+  \end{tikzpicture}
+\end{document}
