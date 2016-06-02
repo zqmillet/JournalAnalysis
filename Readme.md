@@ -27,15 +27,27 @@ Some information of this report is from full papers, but this repository does no
 
 ## Report
 ### Proceedings of the IEEE
-The review time distribution of Proceedings of the IEEE is shown as following figure.
+> The most highly-cited general interest journal in electrical engineering and computer science, the [Proceedings of the IEEE][POTI] is the best way to stay informed on an exemplary range of topics. This journal also holds the distinction of having the longest useful archival life of any EE or computer related journal in the world! Since 1913, the Proceedings of the IEEE has been the leading journal to provide in-depth tutorial and review coverage of the technical developments that shape our world.
+
+|Year      | Impact Factor | Total Articles | Total Cites|
+|---       | ---           | ---            | ---        |
+|2014/2015 | 4.934         | 102            | 21017      |
+|2013      | 5.466         | 154            | 20916      |
+|2012      | 6.911         | 195            | 18840      |
+|2011      | 6.81          | 118            | 16872      |
+|2010      | 5.096         | 139            | 16971      |
+|2009      | 4.878         | 129            | 17919      |
+|2008      | 4.613         | 122            | 17993      |
+
+The review time distribution of [Proceedings of the IEEE][POTI] is shown as following figure.
 
 ![image](./Figures/ReviewTimeDistribution/ProceedingsOfTheIEEE.png)
 
-The page number distribution of Proceedings of the IEEE is shown as following figure.
+The page number distribution of [Proceedings of the IEEE][POTI] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/ProceedingsOfTheIEEE.png)
 
-The relationship between review time and page number of Proceedings of the IEEE is shown as following figure.
+The relationship between review time and page number of [Proceedings of the IEEE][POTI] is shown as following figure.
 
 ![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/ProceedingsOfTheIEEE.png)
 
@@ -102,4 +114,11 @@ The page number distribution of Annual Reviews in Control is shown as following 
 
 The relationship between review time and page number of Annual Reviews in Control is shown as following figure.
 
-![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/AnnualReviewsInControl.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/AnnualReviewsInControl.png) 
+
+[POTI]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5 "Proceedings of the IEEE"
+[TII]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424 "IEEE Transactions on Industrial Informatics"
+[TIE]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41 "IEEE Transaction on Industrial Electronics"
+[TIFS]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206 "IEEE Transaction on Information Forensics and Security"
+[SS]:http://www.journals.elsevier.com/safety-science "Safety Science"
+[ARIC]:http://www.journals.elsevier.com/annual-reviews-in-control "http://www.journals.elsevier.com/annual-reviews-in-control/"
