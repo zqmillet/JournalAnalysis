@@ -29,18 +29,24 @@ Some information of this report is from full papers, but this repository does no
 ### Proceedings of the IEEE
 ![image](./Figures/ReviewTimeDistribution/ProceedingsOfTheIEEE.png)
 ![image](./Figures/PageNumberDistribution/ProceedingsOfTheIEEE.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/ProceedingsOfTheIEEE.png)
 ### IEEE Transaction on Industrial Electronics
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialElectronics.png)
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialElectronics.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/IEEETransactionOnIndustrialElectronics.png)
 ### IEEE Transaction on Industrial Informatics
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialInformatics.png)
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialInformatics.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/IEEETransactionOnIndustrialInformatics.png)
 ### IEEE Transaction on Information Forensics and Security
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/IEEETransactionOnInformationForensicsAndSecurity.png)
 ### Safety Science
 ![image](./Figures/ReviewTimeDistribution/SafetyScience.png)
 ![image](./Figures/PageNumberDistribution/SafetyScience.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/SafetyScience.png)
 ### Annual Reviews in Control
 ![image](./Figures/ReviewTimeDistribution/AnnualReviewsInControl.png)
 ![image](./Figures/PageNumberDistribution/AnnualReviewsInControl.png)
+![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/AnnualReviewsInControl.png)
