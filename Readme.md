@@ -65,6 +65,18 @@ The relationship between review time and page number of IEEE Transaction on Indu
 ![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/IEEETransactionOnIndustrialElectronics.png)
 
 ### IEEE Transaction on Industrial Informatics
+> [IEEE Transactions on Industrial Informatics][TII] focuses on knowledge-based factory automation as a means to enhance industrial fabrication and manufacturing processes. This embraces a collection of techniques that use information analysis, manipulation, and distribution to achieve higher efficiency, effectiveness, reliability, and/or security within the industrial environment. The scope of the Transaction includes reporting, defining, providing a forum for discourse, and informing its readers about the latest developments in intelligent and computer control systems, robotics, factory communications and automation, flexible manufacturing, visionsystems, and data acquisition and signal processing.
+
+Year      | Impact Factor | Total Articles | Total Cites|
+:---:     | :---:         | :---:          | :---:      |
+2014/2015 | -             | -              | -          |
+2013      | 8.785         | 231            | 2644       |
+2012      | 3.381         | 92             | 969        |
+2011      | 2.990         | 71             | 739        |
+2010      | 1.627         | 63             | 328        |
+2009      | 1.614         | 39             | 287        |
+2008      | 2.356         | 28             | 227        |
+
 The review time distribution of IEEE Transaction on Industrial Informatics is shown as following figure.
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialInformatics.png)
