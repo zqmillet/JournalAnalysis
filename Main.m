@@ -56,6 +56,7 @@ for i = 1:numel(Directories)
 end
 
 % Convert PDF file to PNG file
+Resolution = 150;
 GhostScript = 'C:\Program Files\gs\gs9.19\bin\gswin64c.exe';
 if ~exist(GhostScript, 'file')
   error('There is no GhostScript!');
@@ -64,7 +65,7 @@ for i = 1:numel(Directories)
   disp(['Converting PDF file of ', Directories{i},' to PNG file.']);
   PDFFileName = ['Figures/ReviewTimeDistribution/', Directories{i}, '.pdf'];
   PNGFileName = ['Figures/ReviewTimeDistribution/', Directories{i}, '.png'];
-  Parameters = ['-sDEVICE=pngalpha -dBATCH -sOutputFile=', PNGFileName, ' -r200 -dNOPAUSE'];
+  Parameters = ['-sDEVICE=pngalpha -dBATCH -sOutputFile=', PNGFileName, ' -r', num2str(Resolution), ' -dNOPAUSE'];
   if ~exist(PDFFileName, 'file');
     disp('File does not exist!');
     continue;
@@ -75,7 +76,7 @@ for i = 1:numel(Directories)
   
   PDFFileName = ['Figures/PageNumberDistribution/', Directories{i}, '.pdf'];
   PNGFileName = ['Figures/PageNumberDistribution/', Directories{i}, '.png'];
-  Parameters = ['-sDEVICE=pngalpha -dBATCH -sOutputFile=', PNGFileName, ' -r200 -dNOPAUSE'];
+  Parameters = ['-sDEVICE=pngalpha -dBATCH -sOutputFile=', PNGFileName, ' -r', num2str(Resolution), ' -dNOPAUSE'];
   if ~exist(PDFFileName, 'file');
     disp('File does not exist!');
     continue;
