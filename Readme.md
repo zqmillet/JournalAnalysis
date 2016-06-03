@@ -45,9 +45,17 @@ The review time distribution of [Proceedings of the IEEE][POTI] is shown as foll
 
 ![image](./Figures/ReviewTimeDistribution/ProceedingsOfTheIEEE.png)
 
+* The minimum review time is 15 Days, 
+* The average review time is 162.7923 Days, 
+* The maximum review time is 564 Days.
+
 The page number distribution of [Proceedings of the IEEE][POTI] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/ProceedingsOfTheIEEE.png)
+
+* The minimum page number is 7, 
+* The average page number is 17.4809,
+* The maximum page number is 63.
 
 The relationship between review time and page number of [Proceedings of the IEEE][POTI] is shown as following figure.
 
@@ -72,9 +80,17 @@ The review time distribution of [IEEE Transactions on Industrial Electronics][TI
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialElectronics.png)
 
+* The minimum review time is 11 Days, 
+* The average review time is 204.7581 Days, 
+* The maximum review time is 597 Days.
+
 The page number distribution of [IEEE Transactions on Industrial Electronics][TIE] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialElectronics.png)
+
+* The minimum page number is 3, 
+* The average page number is 10.5774, 
+* The maximum page number is 16.
 
 The relationship between review time and page number of [IEEE Transactions on Industrial Electronics][TIE] is shown as following figure.
 
@@ -99,9 +115,17 @@ The review time distribution of [IEEE Transactions on Industrial Informatics][TI
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialInformatics.png)
 
+* The minimum review time is 1 Day, 
+* The average review time is 245.3293 Days, 
+* The maximum review time is 877 Days.
+* 
 The page number distribution of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialInformatics.png)
+
+* The minimum page number is 5,
+* The average page number is 11.4092,
+* The Maximum page number is 18.
 
 The relationship between review time and page number of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
@@ -126,9 +150,17 @@ The review time distribution of [IEEE Transactions on Information Forensics and 
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
 
+* The minimum review time is 16 Days,
+* The average review time is 196.0488 Days,
+* The maximum review time is 428 Days.
+
 The page number distribution of [IEEE Transactions on Information Forensics and Security][TIFS] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
+
+* The minimum page number is 1,
+* The average page number is 12.9512,
+* The maximum page number is 27.
 
 The relationship between review time and page number of [IEEE Transactions on Information Forensics and Security][TIFS] is shown as following figure.
 
@@ -153,9 +185,17 @@ The review time distribution of [Safety Science][SS] is shown as following figur
 
 ![image](./Figures/ReviewTimeDistribution/SafetyScience.png)
 
+* The minimum review time is 19 Days,
+* The average review time is 248.1364 Days,
+* The maximum review time is 972 Days.
+
 The page number distribution of [Safety Science][SS] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/SafetyScience.png)
+
+* The minimum page number is 4,
+* The average page number is 10.3766,
+* The maximum page number is 25.
 
 The relationship between review time and page number of [Safety Science][SS] is shown as following figure.
 
@@ -180,9 +220,17 @@ The review time distribution of [Annual Reviews in Control][ARIC] is shown as fo
 
 ![image](./Figures/ReviewTimeDistribution/AnnualReviewsInControl.png)
 
+* The minimum review time is 2 Days,
+* The average review time is 120.4706 Days,
+* The maximum review time is 727 Days.
+
 The page number distribution of [Annual Reviews in Control][ARIC] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/AnnualReviewsInControl.png)
+
+* The minimum page number is 7,
+* The average page number is 13.2255,
+* The maximum page number is 29.
 
 The relationship between review time and page number of [Annual Reviews in Control][ARIC] is shown as following figure.
 

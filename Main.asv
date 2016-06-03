@@ -1,5 +1,5 @@
-% This script is used to generate the figures in the folder "Figures", which are used in "Readme.md" file, and the "Main.pdf" file.
-% If you modify the raw data in the folder "Journals", please run this script to regenerate all the figures and the "Main.pdf" file. 
+% This script is used to generate the figures in the folder "Figures", which are used in "Readme.md" file.
+% If you want to modify the raw data in the folder "Journals", please run this script to regenerate all the figures and 
 % Runtime Environment:
 %  - Windown 10,
 %  - Matlab 2016a,
@@ -118,10 +118,6 @@ for i = 1:numel(Directories)
   Command = ['"', GhostScript, '" ', Parameters, ' ', PDFFileName];
   [~, ~] = system(Command);
 end
-
-%% Generate the "Main.pdf"
-disp('Generating the Main.pdf.');
-[~, ~] = system('xelatex Main.tex');
 
 %% Clear Temp File
 disp('Deleting the temporary files.')
