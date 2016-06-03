@@ -7,13 +7,13 @@
 %  - GhostScript 9.19.
 
 %% Set the directories
-Directories = {
-  'AnnualReviewsInControl', ...
+Directories = { ...  
   'ProceedingsOfTheIEEE', ...
   'IEEETransactionOnIndustrialElectronics', ...
   'IEEETransactionOnIndustrialInformatics', ...
   'IEEETransactionOnInformationForensicsAndSecurity', ...
-  'SafetyScience'
+  'SafetyScience', ...
+  'AnnualReviewsInControl', ...
 };
 
 %% Handle the raw data
@@ -23,8 +23,10 @@ for i = 1:numel(Directories)
   KeyList = Data.textdata;
   ReviewTimeList = Data.data(:, 1);
   PageNumberList = Data.data(:, 2) + 1;
-
-  disp(['Handling the data of ', Directories{i}, '.']);
+  
+  disp(['min: ', num2str(min(PageNumberList)), 'aver: ', num2str(mean(PageNumberList)), 'max: ', num2str(max(PageNumberList))]);
+  
+  % disp(['Handling the data of ', Directories{i}, '.']);
   Distribution = Functions.GetDistribution(ReviewTimeList, 15);
   SavePath = ['./Data/ReviewTimeDistribution/', Directories{i}, '.dat'];
   Functions.SaveVariable(Distribution, SavePath);

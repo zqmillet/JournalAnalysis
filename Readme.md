@@ -236,6 +236,28 @@ The relationship between review time and page number of [Annual Reviews in Contr
 
 ![image](./Figures/RelationshipBetweenReviewTimeAndPageNumber/AnnualReviewsInControl.png) 
 
+## Summary
+
+|Journal                                                          | Minimum Review Time | Average Review Time | Maximum Review Time |
+| ---                                                             | :---:               | :---:               | :---:               |
+|[Proceedings of the IEEE][POTI],                                 | 15                  | 162.7923            | 564                 |
+|[IEEE Transactions on Industrial Electronics][TIE],              | 11                  | 204.7581            | 597                 |
+|[IEEE Transactions on Industrial Informatics][TII],              | 1                   | 245.3293            | 877                 |
+|[IEEE Transactions on Information Forensics and Security][TIFS], | 16                  | 196.0488            | 428                 |
+|[Safety Science][SS],                                            | 19                  | 248.1364            | 972                 |
+|[Annual Reviews in Control][ARIC].                               | 2                   | 120.4706            | 727                 |
+
+
+|Journal                                                          | Minimum Page Number | Average Page Number | Maximum Page Number |
+| ---                                                             | :---:               | :---:               | :---:               |
+|[Proceedings of the IEEE][POTI],                                 | 7                   | 17.4809             | 63                  |
+|[IEEE Transactions on Industrial Electronics][TIE],              | 3                   | 10.5774             | 16                  |
+|[IEEE Transactions on Industrial Informatics][TII],              | 5                   | 11.4092             | 18                  |
+|[IEEE Transactions on Information Forensics and Security][TIFS], | 1                   | 12.9512             | 27                  |
+|[Safety Science][SS],                                            | 4                   | 10.3766             | 25                  |
+|[Annual Reviews in Control][ARIC].                               | 7                   | 13.2255             | 29                  |
+
+
 [POTI]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5 "Proceedings of the IEEE"
 [TII]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424 "IEEE Transactions on Industrial Informatics"
 [TIE]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41 "IEEE Transactions on Industrial Electronics"
