@@ -8,25 +8,14 @@
 
 \usepackage{bm}
 \usepackage{tabu, longtable}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
 \usepackage{color}
-\usepackage{tikz, pgfplots, tkz-euclide}
-\usetikzlibrary{calc}
-\usetikzlibrary{shadows}
-\usetikzlibrary{positioning}
-\usetikzlibrary{circuits.ee.IEC}
-\usetikzlibrary{decorations.pathmorphing}
-\usetikzlibrary{shapes.symbols}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{intersections}
-\usetikzlibrary{spy}
-\usepgfplotslibrary{fillbetween}
-\usetkzobj{all}
+\usepackage{tikz, pgfplots}
 \pgfplotsset{compat=1.12}
 
 
-\usepackage{ifthen}
-\usepackage{subfigure}
-\usepackage{float}
 \usepackage{cleveref}
 \crefname{equation}{equation}{equations}
 \Crefname{equation}{Equation}{Equations}
@@ -43,16 +32,10 @@
 \crefname{algorithm}{Algorithm}{Algorithms}
 \Crefname{algorithm}{Algorithm}{Algorithms}
 
-\usepackage{keycommand}
-\usepackage{enumerate}
+\usepackage{enumitem}
+\setlist[1]{itemsep=-5pt}
 \usepackage{geometry}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
-\renewcommand{\algorithmicensure}{\textbf{Output:}}
-\renewcommand{\algorithmicforall}{\textbf{for each}}
-\newcommand{\algorithmiccontinue}{\textbf{continue for}}
-\newcommand{\CONTINUE}{\STATE \algorithmiccontinue}
+
 
 % If don't want to use the custom style, use the command \UseCustomStylefalse.
 \newif\ifUseCustomStyle
@@ -72,110 +55,100 @@
 
     \captionsetup[table]{
         font = {footnotesize, sc},
-        labelsep = newline,
+        labelsep = period,
         skip = 0pt
     }
 
     \extrarowsep = -2pt
 \fi
 
-% The following codes are used to draw help lines for tikzpicture.
-\makeatletter
-\def\grd@save@target#1{%
-  \def\grd@target{#1}}
-\def\grd@save@start#1{%
-  \def\grd@start{#1}}
-\tikzset{
-  grid with coordinates/.style={
-    to path={%
-      \pgfextra{%
-        \edef\grd@@target{(\tikztotarget)}%
-        \tikz@scan@one@point\grd@save@target\grd@@target\relax
-        \edef\grd@@start{(\tikztostart)}%
-        \tikz@scan@one@point\grd@save@start\grd@@start\relax
-        \draw[minor help lines] (\tikztostart) grid (\tikztotarget);
-        \draw[major help lines] (\tikztostart) grid (\tikztotarget);
-        \grd@start
-        \pgfmathsetmacro{\grd@xa}{\the\pgf@x/1cm}
-        \pgfmathsetmacro{\grd@ya}{\the\pgf@y/1cm}
-        \grd@target
-        \pgfmathsetmacro{\grd@xb}{\the\pgf@x/1cm}
-        \pgfmathsetmacro{\grd@yb}{\the\pgf@y/1cm}
-        \pgfmathsetmacro{\grd@xc}{\grd@xa + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
-        \pgfmathsetmacro{\grd@yc}{\grd@ya + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
-        \foreach \x in {\grd@xa,\grd@xc,...,\grd@xb}
-        \node[anchor=north] at (\x,\grd@ya) {\pgfmathprintnumber{\x}};
-        \foreach \y in {\grd@ya,\grd@yc,...,\grd@yb}
-        \node[anchor=east] at (\grd@xa,\y) {\pgfmathprintnumber{\y}};
-      }
-    }
-  },
-  minor help lines/.style={
-    help lines,
-    step=\pgfkeysvalueof{/tikz/grid with coordinates/minor step}
-  },
-  major help lines/.style={
-    help lines,
-    line width=\pgfkeysvalueof{/tikz/grid with coordinates/major line width},
-    step=\pgfkeysvalueof{/tikz/grid with coordinates/major step}
-  },
-  grid with coordinates/.cd,
-  minor step/.initial=.2,
-  major step/.initial=1,
-  major line width/.initial=2pt,
-}
-\makeatother
-
-\tikzset{circuit declare symbol = ac source}
-\tikzset{font = \fontsize{10pt}{12pt}\selectfont}
-\tikzset{set ac source graphic = ac source IEC graphic}
-\tikzset
-{
-    ac source IEC graphic/.style=
-    {
-        transform shape,
-        circuit symbol lines,
-        circuit symbol size = width 3 height 3,
-        shape=generic circle IEC,
-        /pgf/generic circle IEC/before background=
-        {
-            \pgfpathmoveto{\pgfpoint{-0.8pt}{0pt}}
-            \pgfpathsine{\pgfpoint{0.4pt}{0.4pt}}
-            \pgfpathcosine{\pgfpoint{0.4pt}{-0.4pt}}
-            \pgfpathsine{\pgfpoint{0.4pt}{-0.4pt}}
-            \pgfpathcosine{\pgfpoint{0.4pt}{0.4pt}}
-            \pgfusepathqstroke
-        }
-    }
+\newcommand{\myquote}[1]{
+  \begingroup
+    \tabulinesep = 10pt
+    \begin{tabu}to \textwidth{|[5pt, blue]X}
+      #1
+    \end{tabu}
+  \endgroup
 }
 
-\tikzset{
-	text shadow/.code args={[#1]#2at#3(#4)#5}{
-		\pgfkeysalso{/tikz/.cd,#1}%
-		\foreach \angle in {0,5,...,359}{
-			\node[#1,text=white] at ([shift={(\angle:.8pt)}] #4){#5};
-		}
-	}
+\newcommand{\ReviewTimeDistribution}[2]{
+  The review time distribution of #2 is shown in \cref{fig:Review Time Distribution of #1}.
+  \begin{figure}[htb]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[bar width   = 0.36cm,
+                   width       = 8cm,
+                   height      = 5.8cm,
+                   ylabel      = Paper Number,
+                   xlabel      = Review Time (Day),
+                   label style = {font = \footnotesize},
+                  ]
+        \addplot[ybar, fill = black, draw = none] file {./Data/ReviewTimeDistribution/#1.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Review Time Distribution of #2}
+    \label{fig:Review Time Distribution of #1}
+  \end{figure}
 }
 
-\newtheorem{prop}{Proposition}
-
-% The follow codes are macros for frequent terms.
-\newcommand{\etal}{\emph{et al}.}
-\newcommand{\risk}{\mathscr{R}}
-\newcommand{\pu}[1]{\overline{#1}{}} % probability upper
-\newcommand{\pl}[1]{\underline{#1}{}} % probability lower
-\newcommand{\fp}[1]{\widetilde{#1}{}} % fuzzy probability
-\newkeycommand{\fpe}[symbol = p][1]{ % fuzzy probability expansion
-    (\pl{\commandkey{symbol}}_{#1}, \commandkey{symbol}_{#1}, \pu{\commandkey{symbol}}_{#1})
+\newcommand{\PageNumberDistribution}[2]{
+  The page number distribution of #2 is shown in \cref{fig:Review Time Distribution of #1}.
+  \begin{figure}[htb]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[bar width   = 0.55cm,
+                   width       = 8cm,
+                   height      = 5.8cm,
+                   ylabel      = Paper Number,
+                   xlabel      = Page Number,
+                   label style = {font = \footnotesize},
+                  ]
+        \addplot[ybar, fill = black, draw = none] file {./Data/PageNumberDistribution/#1.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Page Number Distribution of #2}
+    \label{fig:Page Number Distribution of #1}
+  \end{figure}
 }
-\newcommand{\acuts}{$\alpha$-cuts{}}
-\newcommand{\acut}[1]{{}^{\alpha}\hspace{-1.8pt}{#1}}
-\newcommand{\abfbai}{\acuts{} based fuzzy Bayesian approximate inference}
-\newcommand{\Abfbai}{\acuts{} Based Fuzzy Bayesian Approximate Inference}
-\newcommand{\lthreshold}{D_{\min}}
-\newcommand{\bnt}{\mathscr{B}}
-\newcommand{\cmodel}{\mathscr{C}}
-\newcommand{\pnode}[1]{{}^{*}\hspace{-1.4pt}{#1}}
-\newcommand{\cnode}[1]{{#1}^*}
-\newcommand{\var}{\hspace{1pt}\cdot\hspace{1pt}} 
+
+\newcommand{\RelationshipBetweenRTPN}[2]{
+  The relationship between review time and page number of #2 is shown in \cref{fig:Relationship between Review Time and Page Number of #1}.
+  \begin{figure}[htb]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[width       = 8cm,
+                   height      = 5.8cm,
+                   ylabel      = Page Number,
+                   xlabel      = Review Time (Day),
+                   label style = {font = \footnotesize}]
+        \addplot[scatter, only marks, scatter/use mapped color = 
+        {draw opacity = 0, fill = mapped color}] table[x index = 0, y index = 1, col sep=space] {./Data/RelationshipBetweenReviewTimeAndPageNumber/#1.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Relationship between Review Time and Page Number of #2}
+    \label{fig:Relationship between Review Time and Page Number of #1}
+  \end{figure}
+}
+
+\newcommand{\POTI}{\href{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5}{Proceedings of the IEEE}}
+\newcommand{\TII}{\href{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424}{IEEE Transactions on Industrial Informatics}}
+\newcommand{\TIE}{\href{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41}{IEEE Transactions on Industrial Electronics}}
+\newcommand{\TIFS}{\href{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206}{IEEE Transactions on Information Forensics and Security}}
+\renewcommand{\SS}{\href{http://www.journals.elsevier.com/safety-science}{Safety Science}}
+\newcommand{\ARIC}{\href{http://www.journals.elsevier.com/annual-reviews-in-control}{Annual Reviews in Control}}
+
+\newcommand{\ReviewTimeDetail}[3]{
+  \begin{itemize}
+    \item The minimum review time is #1 (day),
+    \item The average review time is #2 (day),
+    \item The maximum review time is #3 (day).
+  \end{itemize}
+}
+
+\newcommand{\PageNumberDetail}[3]{
+  \begin{itemize}
+    \item The minimum page number is #1,
+    \item The average page number is #2,
+    \item The maximum page number is #3.
+  \end{itemize}
+}

@@ -17,7 +17,7 @@
                  width       = 8cm,
                  height      = 5.8cm,
                  ylabel      = Paper Number,
-                 xlabel      = Review Time (Day),
+                 xlabel      = Page Number,
                  label style = {font = \footnotesize},
                 ]
       \addplot[ybar, fill = black, draw = none] file {./Data/PageNumberDistribution/{{FileName}}.dat};
