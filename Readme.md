@@ -22,7 +22,7 @@ In this report, there are:
 ## How to Get the Report
 This `Reamdme.md` file contains the report. If you want get the `.pdf` file of the report, please clone this repository and compile the `Report.tex` file with `XeLaTeX`.
 
-If the `.dat` files in folder `Journals` are modified, run `Main.m` file with [`Matlab`][Matlab] to regenerate the `Readme.md` file and the `Report.pdf` file. Before running the `Main.m` file, please make sure that you have installed [`TeXLive`][TeXLive]/[`MiKTeX`][MiKTeX] and [`GhostScript`][GhostScript], then set the paths of the `XeLaTeX` and `GhostScript` at the begin of `Main.m` file.
+If the `.dat` files in folder `Journals` are modified, run `Make.m` file with [`Matlab`][Matlab] to regenerate the `Readme.md` file and the `Report.pdf` file. Before running the `Make.m` file, please make sure that you have installed [`TeXLive`][TeXLive]/[`MiKTeX`][MiKTeX] and [`GhostScript`][GhostScript], then set the paths of the `XeLaTeX` and `GhostScript` at the begin of `Make.m` file.
 
     %% Set paths
     GhostScript = 'C:\Program Files\gs\gs9.19\bin\gswin64c.exe';
@@ -124,7 +124,7 @@ The review time distribution of [IEEE Transactions on Industrial Informatics][TI
 * The minimum review time is 1 (day), 
 * The average review time is 245.3293 (day), 
 * The maximum review time is 877 (day).
-* 
+
 The page number distribution of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialInformatics.png)
