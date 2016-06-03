@@ -45,17 +45,17 @@ The review time distribution of [Proceedings of the IEEE][POTI] is shown as foll
 
 ![image](./Figures/ReviewTimeDistribution/ProceedingsOfTheIEEE.png)
 
-* The minimum review time is {{POTEMINRT}} (day), 
-* The average review time is {{POTEAVERT}} (day), 
-* The maximum review time is {{POTEMAXRT}} (day).
+* The minimum review time is {{POTIMINRT}} (day), 
+* The average review time is {{POTIAVERT}} (day), 
+* The maximum review time is {{POTIMAXRT}} (day).
 
 The page number distribution of [Proceedings of the IEEE][POTI] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/ProceedingsOfTheIEEE.png)
 
-* The minimum page number is {{POTEMINPN}}, 
-* The average page number is {{POTEAVEPN}},
-* The maximum page number is {{POTEMAXPN}}.
+* The minimum page number is {{POTIMINPN}}, 
+* The average page number is {{POTIAVEPN}},
+* The maximum page number is {{POTIMAXPN}}.
 
 The relationship between review time and page number of [Proceedings of the IEEE][POTI] is shown as following figure.
 
