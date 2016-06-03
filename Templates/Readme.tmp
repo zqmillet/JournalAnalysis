@@ -80,17 +80,17 @@ The review time distribution of [IEEE Transactions on Industrial Electronics][TI
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialElectronics.png)
 
-* The minimum review time is 11 (day), 
-* The average review time is 204.7581 (day), 
-* The maximum review time is 597 (day).
+* The minimum review time is {{TIEMINRT}} (day), 
+* The average review time is {{TIEAVERT}} (day), 
+* The maximum review time is {{TIEMAXRT}} (day).
 
 The page number distribution of [IEEE Transactions on Industrial Electronics][TIE] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialElectronics.png)
 
-* The minimum page number is 3, 
-* The average page number is 10.5774, 
-* The maximum page number is 16.
+* The minimum page number is {{TIEMINPN}}, 
+* The average page number is {{TIEAVEPN}}, 
+* The maximum page number is {{TIEMAXPN}}.
 
 The relationship between review time and page number of [IEEE Transactions on Industrial Electronics][TIE] is shown as following figure.
 
@@ -115,17 +115,17 @@ The review time distribution of [IEEE Transactions on Industrial Informatics][TI
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnIndustrialInformatics.png)
 
-* The minimum review time is 1 (day), 
-* The average review time is 245.3293 (day), 
-* The maximum review time is 877 (day).
+* The minimum review time is {{TIIMINRT}} (day), 
+* The average review time is {{TIIAVERT}} (day), 
+* The maximum review time is {{TIIMAXRT}} (day).
 * 
 The page number distribution of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnIndustrialInformatics.png)
 
-* The minimum page number is 5,
-* The average page number is 11.4092,
-* The Maximum page number is 18.
+* The minimum page number is {{TIIMINPN}},
+* The average page number is {{TIIAVEPN}},
+* The Maximum page number is {{TIIMAXPN}}.
 
 The relationship between review time and page number of [IEEE Transactions on Industrial Informatics][TII] is shown as following figure.
 
@@ -150,17 +150,17 @@ The review time distribution of [IEEE Transactions on Information Forensics and 
 
 ![image](./Figures/ReviewTimeDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
 
-* The minimum review time is 16 (day),
-* The average review time is 196.0488 (day),
-* The maximum review time is 428 (day).
+* The minimum review time is {{TIFSMINRT}} (day),
+* The average review time is {{TIFSAVERT}} (day),
+* The maximum review time is {{TIFSMAXRT}} (day).
 
 The page number distribution of [IEEE Transactions on Information Forensics and Security][TIFS] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/IEEETransactionOnInformationForensicsAndSecurity.png)
 
-* The minimum page number is 1,
-* The average page number is 12.9512,
-* The maximum page number is 27.
+* The minimum page number is {{TIFSMINPN}},
+* The average page number is {{TIFSAVEPN}},
+* The maximum page number is {{TIFSMAXPN}}.
 
 The relationship between review time and page number of [IEEE Transactions on Information Forensics and Security][TIFS] is shown as following figure.
 
@@ -185,17 +185,17 @@ The review time distribution of [Safety Science][SS] is shown as following figur
 
 ![image](./Figures/ReviewTimeDistribution/SafetyScience.png)
 
-* The minimum review time is 19 (day),
-* The average review time is 248.1364 (day),
-* The maximum review time is 972 (day).
+* The minimum review time is {{SSMINRT}} (day),
+* The average review time is {{SSAVERT}} (day),
+* The maximum review time is {{SSMAXRT}} (day).
 
 The page number distribution of [Safety Science][SS] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/SafetyScience.png)
 
-* The minimum page number is 4,
-* The average page number is 10.3766,
-* The maximum page number is 25.
+* The minimum page number is {{SSMINPN}},
+* The average page number is {{SSAVEPN}},
+* The maximum page number is {{SSMAXPN}}.
 
 The relationship between review time and page number of [Safety Science][SS] is shown as following figure.
 
@@ -220,17 +220,17 @@ The review time distribution of [Annual Reviews in Control][ARIC] is shown as fo
 
 ![image](./Figures/ReviewTimeDistribution/AnnualReviewsInControl.png)
 
-* The minimum review time is 2 (day),
-* The average review time is 120.4706 (day),
-* The maximum review time is 727 (day).
+* The minimum review time is {{ARICMINRT}} (day),
+* The average review time is {{ARICAVERT}} (day),
+* The maximum review time is {{ARICMAXRT}} (day).
 
 The page number distribution of [Annual Reviews in Control][ARIC] is shown as following figure.
 
 ![image](./Figures/PageNumberDistribution/AnnualReviewsInControl.png)
 
-* The minimum page number is 7,
-* The average page number is 13.2255,
-* The maximum page number is 29.
+* The minimum page number is {{ARICMINPN}},
+* The average page number is {{ARICAVEPN}},
+* The maximum page number is {{ARICMAXPN}}.
 
 The relationship between review time and page number of [Annual Reviews in Control][ARIC] is shown as following figure.
 
@@ -240,22 +240,22 @@ The relationship between review time and page number of [Annual Reviews in Contr
 
 |Journal                                                          | Minimum Review Time | Average Review Time | Maximum Review Time |
 | ---                                                             | :---:               | :---:               | :---:               |
-|[Proceedings of the IEEE][POTI],                                 | 15 (day) | 162.7923 (day) | 564 (day) |
-|[IEEE Transactions on Industrial Electronics][TIE],              | 11 (day)  | 204.7581 (day)  | 597 (day)  |
-|[IEEE Transactions on Industrial Informatics][TII],              | 1 (day)  | 245.3293 (day)  | 877 (day)  |
-|[IEEE Transactions on Information Forensics and Security][TIFS], | 16 (day) | 196.0488 (day) | 428 (day) |
-|[Safety Science][SS],                                            | 19 (day)   | 248.1364 (day)   | 972 (day)   |
-|[Annual Reviews in Control][ARIC].                               | 2 (day) | 120.4706 (day) | 727 (day) |
+|[Proceedings of the IEEE][POTI],                                 | {{POTIMINRT}} (day) | {{POTIAVERT}} (day) | {{POTIMAXRT}} (day) |
+|[IEEE Transactions on Industrial Electronics][TIE],              | {{TIEMINRT}} (day)  | {{TIEAVERT}} (day)  | {{TIEMAXRT}} (day)  |
+|[IEEE Transactions on Industrial Informatics][TII],              | {{TIIMINRT}} (day)  | {{TIIAVERT}} (day)  | {{TIIMAXRT}} (day)  |
+|[IEEE Transactions on Information Forensics and Security][TIFS], | {{TIFSMINRT}} (day) | {{TIFSAVERT}} (day) | {{TIFSMAXRT}} (day) |
+|[Safety Science][SS],                                            | {{SSMINRT}} (day)   | {{SSAVERT}} (day)   | {{SSMAXRT}} (day)   |
+|[Annual Reviews in Control][ARIC].                               | {{ARICMINRT}} (day) | {{ARICAVERT}} (day) | {{ARICMAXRT}} (day) |
 
 
 |Journal                                                          | Minimum Page Number | Average Page Number | Maximum Page Number |
 | ---                                                             | :---:               | :---:               | :---:               |
-|[Proceedings of the IEEE][POTI],                                 | 7 | 17.4809 | 63  |
-|[IEEE Transactions on Industrial Electronics][TIE],              | 3  | 10.5774  | 16   |
-|[IEEE Transactions on Industrial Informatics][TII],              | 5  | 11.4092  | 18   |
-|[IEEE Transactions on Information Forensics and Security][TIFS], | 1 | 12.9512 | 27  |
-|[Safety Science][SS],                                            | 4   | 10.3766   | 25    |
-|[Annual Reviews in Control][ARIC].                               | 7 | 13.2255 | 29  |
+|[Proceedings of the IEEE][POTI],                                 | {{POTIMINPN}} | {{POTIAVEPN}} | {{POTIMAXPN}}  |
+|[IEEE Transactions on Industrial Electronics][TIE],              | {{TIEMINPN}}  | {{TIEAVEPN}}  | {{TIEMAXPN}}   |
+|[IEEE Transactions on Industrial Informatics][TII],              | {{TIIMINPN}}  | {{TIIAVEPN}}  | {{TIIMAXPN}}   |
+|[IEEE Transactions on Information Forensics and Security][TIFS], | {{TIFSMINPN}} | {{TIFSAVEPN}} | {{TIFSMAXPN}}  |
+|[Safety Science][SS],                                            | {{SSMINPN}}   | {{SSAVEPN}}   | {{SSMAXPN}}    |
+|[Annual Reviews in Control][ARIC].                               | {{ARICMINPN}} | {{ARICAVEPN}} | {{ARICMAXPN}}  |
 
 
 [POTI]:http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5 "Proceedings of the IEEE"
