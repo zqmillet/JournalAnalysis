@@ -198,11 +198,11 @@ ReadmeFile = fopen('Readme.md', 'w+', 'n', 'UTF-8');
 fprintf(ReadmeFile, '%s', TemplateString);
 fclose(ReadmeFile);
 
-%% Generate the "Main.pdf"
+%% Generate the Report.pdf file
 disp('Generating the Report.pdf.');
 [~, ~] = system(['"', XeLaTeX, '" ', 'Report.tex']);
 
-%% Clear Temp File
+%% Clear the temporary files
 disp('Deleting the temporary files.')
 delete('*.asv');
 delete('*.aux');
